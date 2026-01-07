@@ -19,6 +19,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import com.example.androiddemo.navigation.Home
+import com.example.androiddemo.navigation.RootManager
 import com.example.androiddemo.ui.common.CustomButton
 import com.example.androiddemo.ui.screen.home.HomeScreen
 import com.example.androiddemo.ui.theme.BgGradient
@@ -60,9 +61,7 @@ fun LoginView(
         )
         Spacer(Modifier.height(20.dp))
         CustomButton({
-           navController.navigate(Home(
-               viewModel.emialController.value
-           ))
+           navController.navigate(RootManager)
         },"Login")
     }}
 

@@ -13,6 +13,7 @@ import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.example.androiddemo.R
 import com.example.androiddemo.navigation.Login
+import com.example.androiddemo.navigation.RootManager
 import com.example.androiddemo.ui.screen.auth.LoginView
 import com.example.androiddemo.ui.theme.BgGradient
 import kotlinx.coroutines.delay
@@ -23,7 +24,6 @@ fun SplashScreen(navController: NavController, viewModel: SplashViewModel = view
         delay(2000)
         navController.navigate(Login)
     }
-
     Image(
         modifier = Modifier.background(
             brush = BgGradient

@@ -20,9 +20,8 @@ class MainActivity : ComponentActivity() {
                 val navController = rememberNavController()
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     AppNavHost(
-                        navController = navController,
-
-                        )
+                        navController = navController
+                    )
                 }
             }
         }
